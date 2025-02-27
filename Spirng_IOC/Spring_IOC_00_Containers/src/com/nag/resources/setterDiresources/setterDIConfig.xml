@@ -1,0 +1,164 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+            http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+
+    <bean id="c" class="com.nag.beans.dibeans.Car">
+        <!-- primary type DI -->
+        <property name="carName" value="Audi"/>
+
+        <!-- scondery type DI -->
+            <!-- this is ref approach -->
+        <!--        <property name="engine" ref="e"/>-->
+
+        <!-- this is inner bean approach -->
+        <property name="engine">
+                <bean class="com.nag.beans.dibeans.Engine">
+                    <property name="modelyear" value="2016"/>
+                </bean>
+        </property>
+
+    </bean>
+
+    <!-- dependent Object in Car -->
+    <bean id="e" class="com.nag.beans.dibeans.Engine">
+        <property name="modelyear" value="2016"/>
+    </bean>
+
+
+    <!--    Collection primitive DI-->
+    <!--    default collection DI like List, Set Map-->
+    <bean id = "collectionDI" class="com.nag.beans.dibeans.CollectionDI">
+        <property name="fruits">
+            <list>
+                <value>Apple</value>
+                <value>mango</value>
+            </list>
+
+        </property>
+        <property name="cricketers">
+            <set>
+                <value>sachin</value>
+                <value>sehwag</value>
+            </set>
+        </property>
+        <property name="countryCapital">
+            <map>
+                <entry key = "India" value = "delhi"/>
+                <entry key = "Pak" value = "islamabad"/>
+                <entry key = "Srilanka" value = "colambo"/>
+            </map>
+        </property>
+    </bean>
+
+
+    <!-- Child collection DI-->
+    <!--<bean id="t" class="com.nag.beans.dibeans.ChildCollectionDI">
+
+        <property name="fruits">
+            <util:list list-class="java.util.Vector">
+                <value>Apple</value>
+                <value>Mango</value>
+            </util:list>
+        </property>
+
+        <property name="cricketers">
+            <util:set set-class="java.util.TreeSet">
+                <value>sachin</value>
+                <value>sehwag</value>
+            </util:set>
+        </property>
+
+        <property name="countriesandCapitals">
+            <util:map map-class="java.util.Hashtable">
+                <entry key="India" value="delhi" />
+                <entry key="Pak" value="islamabad" />
+                <entry key="Srilanka" value="colambo" />
+            </util:map>
+        </property>
+    </bean>-->
+
+    <!-- Collection Secondery type DI-->
+    <bean id="ans1" class="com.nag.beans.dibeans.Answers">
+        <property name="id" value="1" />
+        <property name="name" value="java is programming language" />
+        <property name="by" value="nag" />
+    </bean>
+
+    <bean id="ans2" class="com.nag.beans.dibeans.Answers">
+        <property name="id" value="2" />
+        <property name="name" value="java is a platform" />
+        <property name="by" value="king" />
+    </bean>
+
+    <bean id="q" class="com.nag.beans.dibeans.Question">
+        <property name="id" value="111" />
+        <property name="qname" value="What is java?" />
+        <property name="answers">
+            <!-- <list>
+                <ref bean="ans1" />
+                <ref bean="ans2" />
+            </list> -->
+            <set>
+                <ref bean="ans1" />
+                <ref bean="ans2" />
+            </set>
+        </property>
+    </bean>
+
+    <!-- Properties Dependency injection-->
+    <!--<bean id="connectionPool" class="com.nag.beans.dibeans.ConnectionPool">
+        <property name="driver">
+            <util:properties location="classpath:resources/setterDiresources/driver.properties" />
+        </property>
+        <property name="url">
+            <util:properties location="classpath:resources/setterDiresources/driver.properties" />
+        </property>
+        <property name="username">
+            <util:properties location="classpath:resources/setterDiresources/driver.properties" />
+        </property>
+        <property name="password">
+            <util:properties location="classpath:resources/setterDiresources/driver.properties" />
+        </property>
+    </bean>-->
+
+    <!-- Properties Dependency injection using expression ${}-->
+  <!--  <bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer" >
+        <property name="location" value="resources/setterDiresources/driver.properties"></property>
+    </bean>
+
+    <bean id="cp" class="com.nag.beans.dibeans.ConnectionPool">
+        <property name="driver" value="${driver}"/>
+        <property name="url" value="${url}"/>
+        <property name="username" value="${username}"/>
+        <property name="password" value="${password}"/>
+    </bean>-->
+
+    <!-- -->
+    <bean id="e1" class="com.nag.beans.dibeans.Engine">
+        <property name="modelyear" value="2013" />
+    </bean>
+    <bean id="e2" class="com.nag.beans.dibeans.Engine">
+        <property name="modelyear" value="2014" />
+    </bean>
+    <bean id="e3" class="com.nag.beans.dibeans.Engine">
+        <property name="modelyear" value="2015" />
+    </bean>
+    <bean id="car" class="com.nag.beans.dibeans.ArrayDI">
+        <property name="carnames">
+            <list>
+                <value>Honda</value>
+                <value>Benz</value>
+                <value>Audi</value>
+            </list>
+        </property>
+        <property name="enginenames">
+            <list>
+                <ref bean="e1" />
+                <ref bean="e2" />
+                <ref bean="e3" />
+            </list>
+        </property>
+    </bean>
+
+</beans>

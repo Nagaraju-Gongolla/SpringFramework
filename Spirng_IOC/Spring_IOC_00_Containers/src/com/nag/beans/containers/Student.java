@@ -1,4 +1,4 @@
-package com.nag.beans;
+package com.nag.beans.containers;
 
 import java.util.Date;
 

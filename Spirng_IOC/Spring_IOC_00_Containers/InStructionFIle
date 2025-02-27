@@ -1,0 +1,32 @@
+How to use this project to learn practical na theoretically:
+--------------------------------------------------------------
+1. Containers understanding
+2. Dependency Injection
+       I. Setter DI
+            - Primitive type DI
+            - Secondery (Object) type DI
+                -- ref approach
+                -- inherit bean approach
+            - Collection primitive DI
+                - default collection DI like List, Set Map
+                - child type collection DI like ArrayList, HashSet, HashMap basically child classes
+            - Collection secondery (Object) DI
+            - Properties DI
+            - Array Secondery type DI
+        how to make setter injection also mandatory by using dependency-check attribute in config.xml
+        for primitive types it will be dependency-check="simple" -- so we are making all primitive dependencies
+        inside that class is mandatory of setter injection
+        for not primitive we can use  dependency-check="objects"
+        if you want all mandatory use dependency-check="all"
+         ---- OR ---
+         you can use @Required annotation for each setter method.
+
+
+       II. Construction DI
+              - Primitive type DI
+              - Secondery (Object) type DI
+              - Collection primitive DI
+                    - default collection DI like List, Set Map
+                    - child type collection DI like ArrayList, HashSet, HashMap basically child classes
+              - Collection secondery (Object) DI
+              - Properties DI
