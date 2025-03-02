@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6a8cabe6-0273-4aa4-bc39-5b170a948307" name="Changes" comment="Added all types of Setter Dependency injection Code">
+      <change beforePath="$PROJECT_DIR$/InStructionFIle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nag/beans/containers/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nag/beans/dibeans/Answers.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nag/beans/dibeans/ArrayDI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nag/beans/dibeans/Car.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nag/beans/dibeans/ChildCollectionDI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nag/beans/dibeans/CollectionDI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nag/beans/dibeans/ConnectionPool.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nag/beans/dibeans/Engine.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nag/beans/dibeans/Question.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nag/dependentJars/commons-logging-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nag/dependentJars/spring-beans-4.3.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nag/dependentJars/spring-context-4.3.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nag/dependentJars/spring-context-support-4.3.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nag/dependentJars/spring-core-4.3.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nag/dependentJars/spring-expression-4.3.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nag/resources/containers/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nag/resources/setterDiresources/driver.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nag/resources/setterDiresources/setterDIConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nag/test/containerstests/ContainersTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/nag/test/ditests/SetterDITest.java" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2t9rYsikMQ30mk4aINKqTKyfNCv" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/WorkSpace/gitworking/SpringFramework/Spirng_IOC/Spring_IOC_SetterDI/pom.xml",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler",
+    "settings.editor.splitter.proportion": "0.33910388",
+    "spring.configuration.checksum": "d41d8cd98f00b204e9800998ecf8427e"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\WorkSpace\gitworking\SpringFramework\Spirng_IOC\Spring_IOC_00_Containers\src\com\nag\beans\dibeans" />
+      <recent name="D:\WorkSpace\gitworking\SpringFramework\Spirng_IOC\Spring_IOC_00_Containers\src\com\nag\resources\setterDiresources" />
+      <recent name="D:\WorkSpace\gitworking\SpringFramework\Spirng_IOC\Spring_IOC_00_Containers\src\com\nag\resources\containers" />
+      <recent name="D:\WorkSpace\gitworking\SpringFramework\Spirng_IOC\Spring_IOC_00_Containers\src\com\nag\resources\diresources" />
+      <recent name="D:\WorkSpace\gitworking\SpringFramework\Spirng_IOC\Spring_IOC_00_Containers\src\com\nag\test\ditests" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.nag.test.containerstests" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.com.nag.test.containerstests.ContainersTest">
+    <configuration name="ContainersTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nag.test.ContainersTest" />
+      <module name="Spring_IOC_SetterDI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nag.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SetterDITest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nag.test.ditests.SetterDITest" />
+      <module name="Spring_IOC_SetterDI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nag.test.ditests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="com.nag.test.containerstests.ContainersTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nag.test.containerstests.ContainersTest" />
+      <module name="Spring_IOC_SetterDI" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nag.test.containerstests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.com.nag.test.containerstests.ContainersTest" />
+        <item itemvalue="Application.ContainersTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a8cabe6-0273-4aa4-bc39-5b170a948307" name="Changes" comment="" />
+      <created>1739775191677</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739775191677</updated>
+      <workItem from="1739775193525" duration="1952000" />
+      <workItem from="1739924381590" duration="4611000" />
+      <workItem from="1739942024446" duration="2177000" />
+      <workItem from="1739999012497" duration="932000" />
+      <workItem from="1740417282017" duration="16027000" />
+      <workItem from="1740932511081" duration="200000" />
+      <workItem from="1740932747506" duration="49000" />
+    </task>
+    <task id="LOCAL-00001" summary="IOC container Demo">
+      <created>1739942455978</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739942455978</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added all types of Setter Dependency injection Code">
+      <created>1740677740904</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740677740904</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="IOC container Demo" />
+    <MESSAGE value="Added all types of Setter Dependency injection Code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added all types of Setter Dependency injection Code" />
+  </component>
+</project>
