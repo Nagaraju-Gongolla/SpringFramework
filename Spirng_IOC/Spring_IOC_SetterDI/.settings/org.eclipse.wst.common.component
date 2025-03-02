@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
     	
-    <wb-module deploy-name="Spring_IOC_00_Containers-0.0.1-SNAPSHOT">
+    <wb-module deploy-name="Spring_IOC-0.0.1-SNAPSHOT">
         		
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         		
@@ -10,9 +10,9 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/generated-sources/annotations"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/target/generated-test-sources/test-annotations"/>
         		
-        <property name="java-output-path" value="/Spring_IOC_00_Containers/build/classes"/>
+        <property name="java-output-path" value="/Spring_IOC/build/classes"/>
         		
-        <property name="context-root" value="Spring_IOC_00_Containers"/>
+        <property name="context-root" value="Spring_IOC"/>
         	
     </wb-module>
     
