@@ -83,6 +83,7 @@ public class NoteController {
 			modelMap.addAttribute("notesListUI", noteRepository.getAllNotes());
 
 		}
+		modelMap.addAttribute("notesListUI", noteRepository.getAllNotes());
 		return "index";
 
 	}

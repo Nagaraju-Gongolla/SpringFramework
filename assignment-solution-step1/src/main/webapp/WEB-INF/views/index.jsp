@@ -38,7 +38,7 @@
 	</form>
 
 	<!-- display all existing notes in a tabular structure with Id, Title,Content,Status, Created Date and Action -->
-	<h1>Employees List</h1>
+	<h1>Notes List</h1>
 	<table border="2" width="70%" cellpadding="2">
 		<tr>
 			<th>Note Id</th>
