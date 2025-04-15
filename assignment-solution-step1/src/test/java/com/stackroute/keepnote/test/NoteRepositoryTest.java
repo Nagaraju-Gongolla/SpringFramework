@@ -65,7 +65,6 @@ public class NoteRepositoryTest {
 
 		assertTrue("Pending".equalsIgnoreCase("Pending"));
 
-		//System.out.println(updatedNote1.getNoteStatus());
 	}
 
 	@Test

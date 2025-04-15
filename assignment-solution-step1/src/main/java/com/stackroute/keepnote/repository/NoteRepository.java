@@ -43,42 +43,28 @@ public class NoteRepository {
      */
 
     public void addNote(Note note) {
-        this.list.add(note);
+        getList().add(note);
     }
 
     /* This method should deleted a specified note from the list */
 
     public boolean deleteNote(int noteId) {
         /* Use list iterator to find matching note id and remove it from the list */
-        List<Note> notesList1 = this.getAllNotes();
-        ListIterator<Note> iterator = notesList1.listIterator();
+        ListIterator<Note> iterator = this.list.listIterator();
+        Boolean isRemoved = Boolean.FALSE;
         while (iterator.hasNext()) {
-            Note note = iterator.next();
-            if (note.getNoteId() == noteId) {
-                this.list.remove(note);
-                return true;
+            if (noteId == iterator.next().getNoteId()) {
+                iterator.remove();
+                isRemoved = Boolean.TRUE;
             }
         }
-        return false;
-
-
-//		List<Note> notesList = this.getAllNotes();
-//		for(Note note: notesList) {
-//			if(note.getNoteId()==noteId) {
-//				this.list.remove(note);
-//				return true;
-//			}
-//		}
-//		
-//		return false;
-
-
+        return isRemoved;
     }
 
     /* This method should return the list of notes */
 
     public List<Note> getAllNotes() {
-        return this.list;
+        return this.getList();
     }
 
     /*
@@ -89,44 +75,36 @@ public class NoteRepository {
 
     public boolean exists(int noteId) {
 
-        //List<Note> notesList = this.getAllNotes();
-        List<Note> notesList = this.getAllNotes();
-        ListIterator<Note> iterator = notesList.listIterator();
+        // Java 7 Approach
+       /* ListIterator<Note> iterator = this.getAllNotes().listIterator();
         while (iterator.hasNext()) {
-            Note note = iterator.next();
-            if (note.getNoteId() == noteId) {
+            if (noteId == iterator.next().getNoteId()) {
                 return true;
             }
         }
+        return false;*/
 
-        return false;
-//		for(Note note: notesList) {
-//			if(note.getNoteId()==noteId) {
-//				return true;
-//			}
-//		}
-//		return false;
+        // Java 8 Approach
+        return this.getAllNotes().stream().filter(note -> note.getNoteId() == noteId).findAny().isPresent();
     }
 
-	// updating the note if already present in the notes
+    // updating the note if already present in the notes
 
-	public boolean updateNote(Note incomingNote){
-		boolean isUpdated = false;
-		int incomingNoteNoteId = incomingNote.getNoteId();
-		if(this.exists(incomingNoteNoteId)){
-			for(Note note1 : getAllNotes()){
-				if(note1.getNoteId() == incomingNoteNoteId){
-					Note existingNote = note1;
-					existingNote.setNoteTitle(incomingNote.getNoteTitle());
-					existingNote.setNoteContent(incomingNote.getNoteContent());
-					existingNote.setNoteStatus(incomingNote.getNoteStatus());
-					existingNote.setCreatedAt(LocalDateTime.now());
-					isUpdated = true;
-				}
-			}
+    public boolean updateNote(Note incomingNote) {
+       Boolean isUpdated = Boolean.FALSE;
+        if (this.exists(incomingNote.getNoteId())) {
+            for (Note note : this.getAllNotes()) {
+                if (note.getNoteId() == incomingNote.getNoteId()) {
+                    note.setNoteTitle(incomingNote.getNoteTitle());
+                    note.setNoteContent(incomingNote.getNoteContent());
+                    note.setNoteStatus(incomingNote.getNoteStatus());
+                    note.setCreatedAt(LocalDateTime.now());
+                    isUpdated = Boolean.TRUE;
+                }
+            }
 
-		}else isUpdated = false;
+        } else isUpdated = Boolean.FALSE;
 
-		return isUpdated;
-	}
+        return isUpdated;
+    }
 }

@@ -13,9 +13,9 @@ This server-side application will handle HTTP requests, execute some domain spec
 
 ### Problem Statement
 
-In this case study: Keep Note Step 1, we will develop a monolithic application which will get the note Id,title,content and status from the user using a form (JSP/HTML), persist the data in Array List and display all notes with details such as note id,note title, note content,note status and LocalDateTime of posting in a reverse chronological order (atest note first).
+In this case study: Keep Note Step 1, we will develop a monolithic application which will get the note Id,title,content and status from the user using a form (JSP/HTML), persist the data in Array List and display all notes with details such as note id,note title, note content,note status and LocalDateTime of posting in a reverse chronological order (latest note first).
 
-**Note: For detailed clarity on the class files, kindly go thru the Project Structure**
+**Note: For detailed clarity on the class files, kindly go through the Project Structure**
 ### Expected solution
  A form containing four text fields for Note ID, Note Title, Note Content, Note Status and a submit button, below to this will be a tabular column with the fields Note ID, Note Title, Note Content and LocalDateTime(This will be published in reverse chronological order). 
  When the user enters the Note ID, Note Title, Note Content, Note Status and clicks on submit button, it gets stored in the array list and later render in tabular column.
@@ -37,7 +37,7 @@ In this case study: Keep Note Step 1, we will develop a monolithic application w
     Step 7: In NoteRepository.java, create methods to add/retrieve/update/delete notes from the Array List. 
        Also Write a method which is used to retrieve all notes from array list.
     Step 8: Run the test cases for NoteRepository(NoteRepositoryTest.java)
-    Step 9: In NoteController.java, get the application context from resources/beans.xml file using ClassPathXmlApplicationContext() class.Also get Note and NoteRepository objects from the application 			context.Annotate the NoteController.java with @Controller annotation.
+    Step 9: In NoteController.java, get the application context from resources/beans.xml file using ClassPathXmlApplicationContext() class.Also get Note and NoteRepository objects from the applicationcontext.Annotate the NoteController.java with @Controller annotation.
     	Define a handler method to read the existing notes from the ArrayList, to read the Note data from requested parameters and save the new note in the Array List and delete a note.
     Step 10: Run the testcases for NoteController (NoteControllerTest.java)
     Step 11: Design a form with four text boxes (Note id, title, content and status) and a submit button and A table which shows Note id, title, content, status and the created date.
